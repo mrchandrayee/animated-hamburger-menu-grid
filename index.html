@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111114">
+  <title>Animated Hamburger Menu Grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="screen">
+    <section class="code-panel html-panel" aria-label="HTML code preview">
+      <div class="window-dots"><i></i><i></i><i></i></div>
+      <pre><code><span class="pink">&lt;div</span> <span class="green">class</span>=<span class="yellow">"grid"</span><span class="pink">&gt;</span>
+  <span class="pink">&lt;div</span> <span class="green">class</span>=<span class="yellow">"menu cross menu--1"</span><span class="pink">&gt;</span>
+    <span class="pink">&lt;label&gt;</span>
+      <span class="pink">&lt;input</span> <span class="green">type</span>=<span class="yellow">"checkbox"</span><span class="pink">&gt;</span>
+      <span class="pink">&lt;svg</span> <span class="green">viewBox</span>=<span class="yellow">"0 0 100 100"</span><span class="pink">&gt;</span>
+        <span class="pink">&lt;circle</span> <span class="green">cx</span>=<span class="yellow">"50"</span> <span class="green">cy</span>=<span class="yellow">"50"</span> <span class="green">r</span>=<span class="yellow">"30"</span><span class="pink">/&gt;</span>
+        <span class="pink">&lt;path</span> <span class="green">class</span>=<span class="yellow">"line line--1"</span><span class="pink">/&gt;</span>
+        <span class="pink">&lt;path</span> <span class="green">class</span>=<span class="yellow">"line line--2"</span><span class="pink">/&gt;</span>
+        <span class="pink">&lt;path</span> <span class="green">class</span>=<span class="yellow">"line line--3"</span><span class="pink">/&gt;</span>
+      <span class="pink">&lt;/svg&gt;</span>
+    <span class="pink">&lt;/label&gt;</span>
+  <span class="pink">&lt;/div&gt;</span>
+<span class="pink">&lt;/div&gt;</span></code></pre>
+    </section>
+
+    <section class="menu-showcase">
+      <div class="burger-art" aria-hidden="true">🍔</div>
+      <h1>Menu</h1>
+      <div class="menu-grid" id="menuGrid" aria-label="Animated menu controls">
+        <button class="menu-toggle menu--1" type="button" aria-label="Open menu option one" aria-expanded="false">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <circle class="circle" cx="50" cy="50" r="30"/>
+            <path class="line line--1" d="M30 40 H70"/>
+            <path class="line line--2" d="M30 50 H70"/>
+            <path class="line line--3" d="M30 60 H70"/>
+          </svg>
+        </button>
+        <button class="menu-toggle menu--2" type="button" aria-label="Open menu option two" aria-expanded="false">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <circle class="circle" cx="50" cy="50" r="30"/>
+            <path class="line line--1" d="M30 40 H70"/>
+            <path class="line line--2" d="M30 50 H70"/>
+            <path class="line line--3" d="M30 60 H70"/>
+          </svg>
+        </button>
+        <button class="menu-toggle menu--3" type="button" aria-label="Open menu option three" aria-expanded="false">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <circle class="circle" cx="50" cy="50" r="30"/>
+            <path class="line line--1" d="M30 40 H70"/>
+            <path class="line line--2" d="M30 50 H70"/>
+            <path class="line line--3" d="M30 60 H70"/>
+          </svg>
+        </button>
+        <button class="menu-toggle menu--4" type="button" aria-label="Open menu option four" aria-expanded="false">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <circle class="circle" cx="50" cy="50" r="30"/>
+            <path class="line line--1" d="M30 40 H70"/>
+            <path class="line line--2" d="M30 50 H70"/>
+            <path class="line line--3" d="M30 60 H70"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="code-panel css-left" aria-label="CSS code preview one">
+      <div class="window-dots"><i></i><i></i><i></i></div>
+      <pre><code><span class="selector">.menu--1 label,</span>
+<span class="selector">.menu--2 label</span> {
+  <span class="prop">bottom</span>: 0;
+}
+
+<span class="selector">.menu--3 label,</span>
+<span class="selector">.menu--4 label</span> {
+  <span class="prop">top</span>: 0;
+}
+
+<span class="selector">.menu--1 label,</span>
+<span class="selector">.menu--3 label</span> {
+  <span class="prop">right</span>: 0;
+}
+
+<span class="selector">.menu--2 label,</span>
+<span class="selector">.menu--4 label</span> {
+  <span class="prop">left</span>: 0;
+}</code></pre>
+    </section>
+
+    <section class="code-panel css-right" aria-label="CSS code preview two">
+      <div class="window-dots"><i></i><i></i><i></i></div>
+      <div class="panel-title">Will You Try?</div>
+      <div class="choice-row"><span>OF COURSE</span><span>YEAH BRO 🥰</span></div>
+      <pre><code><span class="selector">html, body</span> {
+  <span class="prop">width</span>: 100vw;
+  <span class="prop">height</span>: 100vh;
+  <span class="prop">padding</span>: 0;
+  <span class="prop">margin</span>: 0;
+  <span class="prop">background-color</span>: #121314;
+}
+
+<span class="selector">input</span> {
+  <span class="prop">display</span>: none;
+}
+
+<span class="selector">.grid</span> {
+  <span class="prop">display</span>: grid;
+  <span class="prop">grid-template-rows</span>: 1fr 1fr;
+  <span class="prop">grid-template-columns</span>: 1fr 1fr;
+  <span class="prop">width</span>: 100vw;
+  <span class="prop">height</span>: 100vh;
+  <span class="prop">position</span>: absolute;
+}
+
+<span class="selector">.grid &gt; *</span> {
+  <span class="prop">position</span>: relative;
+}</code></pre>
+    </section>
+
+    <nav class="expanded-menu" id="expandedMenu" aria-label="Expanded navigation" hidden>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <footer class="creator">
+      <div class="avatar">W</div>
+      <div><strong>Web Developer</strong><span>@coding.stella</span></div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
